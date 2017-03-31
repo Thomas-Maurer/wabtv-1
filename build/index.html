@@ -1,0 +1,69 @@
+  <!DOCTYPE HTML>
+  <html>
+
+  <head>
+    <title>
+
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="description" content="WAB TV ADMIN">
+
+    <!-- inject:css -->
+    <link rel="stylesheet" href="/css/admin-layout.css">
+    <!-- endinject -->
+
+    <!-- inject:js -->
+    <script src="/apps.js"></script>
+    <script src="/controllers/adminProgController.js"></script>
+    <!-- endinject -->
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body ng-app="wabTV">
+    <div ng-controller="adminWabTV" class="content">
+      <span class='bckg'></span>
+      <header>
+        <h1>
+          Admin WabTV
+        </h1>
+        <nav>
+          <ul>
+            <li>
+              <a data-title='Projects'>Streaming</a>
+            </li>
+            <li>
+              <a data-title='Team'>Utilisateurs</a>
+            </li>
+            <li>
+              <?php echo $this->Html->link(
+                'Timeline',
+                ['controller' => 'Timeline', 'action' => 'controlPanel']
+              ); ?>
+            </li>
+            <li>
+             <?php echo $this->Html->link(
+              'Smileys',
+              ['controller' => 'Smileys', 'action' => 'controlPanel']
+              ); ?>
+            </li>
+            <li>
+              <a data-title='Search'>Unidad 6</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+        <div class='title'>
+          <h2>Panel Admin</h2>
+          <a href='#' title='Profil'>
+            <?= $username ?>
+          </a>
+        </div>
+      <div id="contentAdmin">
+          
+      </div>
+  </div>
+  </body>
+  </html>
