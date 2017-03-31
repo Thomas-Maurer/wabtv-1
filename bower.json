@@ -1,11 +1,11 @@
 {
-  "name": "wabtv",
-  "description": "WAB TV Website",
-  "version": "1.0.0",
-  "homepage": "https://github.com/Yehzuna/wabtv",
+  "name": "wabtv-admin",
+  "homepage": "https://github.com/Thomas-Maurer/wabtv-1",
   "authors": [
-    "Thomas BORUSZEWSKI <yehzuna@outlook.com>"
+    "thomas maurer <thomas.wellan@gmail.com>"
   ],
+  "description": "",
+  "main": "",
   "license": "MIT",
   "ignore": [
     "**/.*",
@@ -15,10 +15,6 @@
     "tests"
   ],
   "dependencies": {
-    "angular": "^1.6.1",
-    "angular-route": "^1.6.1",
-    "normalize-css": "^5.0.0",
-    "dom-to-image": "^2.5.2",
-    "angular-scroll": "^1.0.0"
+    "angular": "^1.6.4"
   }
 }
