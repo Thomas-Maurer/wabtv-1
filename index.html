@@ -10,11 +10,16 @@
     <meta name="description" content="WAB TV ADMIN">
 
     <!-- inject:css -->
-    <LINK rel="stylesheet" type="text/css" href="css/admin-layout.css">
+    <link rel="stylesheet" href="/css/admin-layout.css">
     <!-- endinject -->
 
     <!-- inject:js -->
     <script src="/bower_components/angular/angular.js"></script>
+    <script src="/node_modules/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="/apps.js"></script>
+    <script src="/js/controllers/adminProgController.js"></script>
+    <script src="/js/controllers/adminWabTVController.js"></script>
+    <script src="/js/state-config/states.js"></script>
     <!-- endinject -->
 
     <!--[if lt IE 9]>
@@ -31,7 +36,7 @@
         <nav>
           <ul>
             <li>
-              <a data-title='Projects'>Streaming</a>
+              <a ng-click='goToProgAdmin()' data-title='Projects'>Programation</a>
             </li>
             <li>
               <a data-title='Team'>Utilisateurs</a>
@@ -61,7 +66,7 @@
           </a>
         </div>
       <div id="contentAdmin">
-          
+          <section ui-view></section>
       </div>
   </div>
   </body>

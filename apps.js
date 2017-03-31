@@ -1,1 +1,1 @@
-var app = angular.module("wabTV", []);
+var app = angular.module("wabTV", ['ui.router']);
